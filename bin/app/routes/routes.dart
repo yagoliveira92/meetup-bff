@@ -10,7 +10,7 @@ class Routes {
         '/helloworld',
         HelloWorldController.helloWorldHandler,
       )
-      ..get(
+      ..post(
         '/namedetails',
         NameDetailsController.nameDetailsController,
       );
