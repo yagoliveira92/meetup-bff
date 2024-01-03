@@ -1,7 +1,7 @@
 class ActivityModel {
   String? activity;
   String? type;
-  int? participants;
+  double? participants;
   double? price;
   String? link;
   String? key;
@@ -13,7 +13,7 @@ class ActivityModel {
   ActivityModel.fromJson(Map<String, dynamic> json) {
     activity = json['activity'];
     type = json['type'];
-    participants = json['participants'];
+    participants = json['participants'].toDouble();
     price = json['price'].toDouble();
     link = json['link'];
     key = json['key'];
